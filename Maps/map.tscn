@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://b222q1dll8mcr"]
+
+[ext_resource type="Texture2D" uid="uid://c10hmuirhk5nr" path="res://art/tilemap-grass.png" id="1_tfcjo"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lxgu6"]
+texture = ExtResource("1_tfcjo")
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+16:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_axgqa"]
+sources/0 = SubResource("TileSetAtlasSource_lxgu6")
+
+[node name="Map" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+texture_filter = 1
+tile_set = SubResource("TileSet_axgqa")
